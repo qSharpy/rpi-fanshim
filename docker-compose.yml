@@ -1,0 +1,14 @@
+version: "2"  
+
+services:  
+  fanshim:  
+     image: tesla3l337/fanshim:latest    
+     container_name: fanshim  
+     restart: always  
+     environment:  
+      - FSHM_DELAY=2  
+      - FSHM_OFFTH=45  
+      - FSHM_ONTH=57  
+      - FSHM_BRIGHT=255  
+     privileged: true  
+     network_mode: "host"
